@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio de selectores</title>
+    <style>
+        *{
+            background-color: rgb(198, 248, 248);
+            
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body h1{
+            color: rgb(10, 10, 131);
+            text-align: center;
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 100px;
+            border-style: dashed;
+            background-color: rgb(180, 252, 180);
+        }
+
+        article section p{
+            color: blueviolet;
+            font-size: 15px;
+            font-style: italic;
+            text-align: center;
+        }
+
+        article section {
+            color: chocolate;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        body p {
+            color: crimson;
+            font-weight: lighter;
+            font-size: large;
+            font-family: monospace;
+            text-align: right;
+        }
+
+        div > h2 {
+            color: darkgreen;
+            font-weight: bolder;
+            text-align: center;
+            padding-right: 305px;
+        }
+
+        div span p {
+            border: 5px solid rgb(0, 0, 0);
+            padding: 30px;
+            margin-top: 200px;
+            margin-left: 650px;
+            margin-right: 250px;
+            color: rgb(211, 34, 255);
+            background-color: rgb(243, 230, 172);
+            border-style: dotted;
+        }
+
+        div span p strong {
+
+            background-color: rgb(198, 248, 248);
+            color: rgb(0, 0, 0);
+
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <h1>USO DE SELECTORES</h1>
+    <br>
+    <br>
+    
+    <article>
+        <section> Todas las secciones dentro de article tendrán este formato.</section>
+        <section><p>Todas las "p" dentro de seccion y que estén dentro de article, tendrán este formato.</p></section>
+    </article>
+
+    <p>Todas las "p" en el body, tendrán este formato.</p>
+
+    <div>
+        <h2>
+            Todas los "H2" que sean hijos de DIV's, tendrán este formato.
+        </h2>
+    </div>
+
+    <div>
+        <span>
+            <p>
+                - El <strong>"border"</strong> es una linea que se pinta alrededor del item donde lo pongas. <br><br>
+                - El <strong>"padding"</strong> es el espacio que hay entre el border y el contenido interior, ya sea imagen, texto... <br><br>
+                - El <strong>"margin"</strong> es el espacio que se añade entre el border hacia fuera <br><br>
+            </p>
+        </span>
+    </div>
+</body>
+</html>

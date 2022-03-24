@@ -1,0 +1,19 @@
+git clone XXXXX(URL)
+(es para clonar lo que tienes del gitHub al PC, es decir bajar el codigo, SOLO 1 VEZ PARA CONECTAR)
+
+git add . 
+(es para subir lo que tienes hecho en el visual a tu gitHub, debes estar en la carpeta de git/cursfrontend)
+
+git commit -m "mi primer commit"
+(es para hacer el commit y que quede guardado listo para hacer push)
+
+git push
+(hace que se suba todo del pc al gitHub)
+
+
+
+git pull
+(es para bajar el codigo que tenemos en el github)
+
+rgarciagutie
+b8!i2I@Z

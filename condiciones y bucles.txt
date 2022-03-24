@@ -1,0 +1,27 @@
+Estructuras condicionales
+
+Switch 	-> Es una condición simple, se utiliza cuando sabemos el número exacto del caso.
+	Ejemplo: Los días del mes, días de la semana, horóscopo, pisos de ascensor, etc.
+	Se utilizan los "Case".
+
+For 	-> Número determinado de repeticiones.
+	-> Tiene 3 partes: INDICE, CONDICIÓN, INCREMENTO/DECREMENTO
+		INDICE: Donde empieza (por ejemplo 0)
+		CONDICIÓN: Es la condición que se debe cumplir para que se repita. Cuando ha de parar el bucle (por ejemplo si queremos 10 repeticiones, parará cuando el incremento de 0 llegue a 10 en la CONDICIÓN).
+		INCREMENTO/DECREMENTO: Como queremos que el INDICE avance y la CONDIDIÓN sea correcta (utilizamos ++ para decir de 1 en 1, o +2...).
+
+ForEach	-> Número determinado de repeticiones, pero van ligados SIEMPRE a un Array.
+	-> El funcionamiento es que recorre uno a uno los elementos de un Array.
+
+While	-> Cuando no se tiene un número determinado de repeticiones.
+	-> Siempre hace la "pregunta" y luego ejecuta.
+
+DoWhile	-> Queremos que mí
+nimo se ejecute el código una vez y no sepamos el número de veces que se va a repetir.
+	   Seguidamente hace la "pregunta" al while y luego ejecuta.
+
+
+*TIPS*
+
+Iteración = Repetición
+Ayuda mucho traducir al español las condiciones para entenderlas, por ejemplo ForEach (Para cada), DoWhile (Hacerlo mientras)...

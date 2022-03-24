@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Enjoying the Real Anime</title>
+</head>
+
+<link rel="stylesheet" href="/css/style.css">
+
+<center>
+        <body>
+                <h1 style="color: oldlace;">Contacto</h1>
+                <h3 style="color: oldlace;">Rellena el formulario para que nos pongamos en contacto contigo</h3>
+
+
+                <h1 style="color: rgb(98, 126, 251);">DATOS BÁSICOS</h1>
+
+                <form action="/action_page.php">
+
+                        <!-- Nombre -->
+                        <label for="fname">Nombre</label><br>
+                        <input type="text" id="fname" name="fname" required><br><br>
+
+                        <!-- Apellido -->
+                        <label for="lname">Apellido</label><br>
+                        <input type="text" id="lname" name="lname" required><br><br>
+
+                        <!-- 2nd Apellido -->
+                        <label for="lname">Segundo Apellido</label><br>
+                        <input type="text" id="l2name" name="l2name" ><br><br>
+
+                        <!-- Tipo Documento -->
+                        <label for="lname">Tipo de Documento</label><br>
+                        <select name="docu" id="docu" required>
+                          <option value=" " selected> </option>
+                          <option value="DNI">DNI</option>
+                          <option value="NIE">NIE</option>
+                          <option value="NIF">NIF</option>
+                          <option value="FNMT">FNMT</option>
+                        </select>
+                        <br><br>
+
+                        <!-- Documento identidad -->
+                        <label for="lname">Documento de indentidad</label><br>
+                        <input type="text" id="ldni" name="ldni" required><br>
+
+                        <!-- Género -->
+                        <p>Eres</p>
+                        <input type="radio" id="hombre" name="sexo" value="hombre" required>
+                        <label for="html">Hombre</label>
+                        <input type="radio" id="mujer" name="sexo" value="mujer" required>
+                        <label for="css">Mujer</label>
+                        <input type="radio" id="nogender" name="sexo" value="nogender" required>
+                        <label for="css">Sin género</label><br><br>
+
+                        <!-- Cumpleaños -->
+                        <label for="date">Fecha de nacimiento</label><br>
+                        <input type="date" id="birthday" name="birthday" required>
+
+                        <h1 style="color: rgb(98, 126, 251);">DATOS DE CONTACTO</h1>
+
+                        <!-- Email -->
+                        <label for="fname">Email</label><br>
+                        <input type="text" id="fmail" name="fmail" required><br><br>
+
+                        <!-- Telefono -->
+                        <label for="fname">Teléfono</label><br>
+                        <input type="text" id="fphone" name="fphone" required><br><br>
+
+                        <!-- Donde vives -->
+                        <p>Vives en Barcelona?</p>
+                        <input type="radio" id="fbcn" name="fbcn" value="si" required>
+                        <label for="html">Si</label>
+                        <input type="radio" id="fbcn" name="fbcn" value="no" required>
+                        <label for="css">No</label><br><br>
+
+                        <!-- Tipo de Via -->
+                        <label for="via">Tipo de via</label><br>
+                        <select name="fvia" id="fvia">
+                          <option value=" " selected> </option>
+                          <option value="avenida">Avenida</option>
+                          <option value="calle">Calle</option>
+                          <option value="plaza">Plaza</option>
+                        </select>
+                        <br><br>
+
+                        <!-- Direccion -->
+                        <label for="fname">Dirección</label><br>
+                        <input type="text" id="fdireccion" name="fdireccion" required><br><br>
+
+                        <!-- Número de direccion -->
+                        <label for="fname">Número</label><br>
+                        <input type="number" id="fnumber" name="fnumber" required><br><br>
+
+                        <!-- Piso -->
+                        <label for="fname">Piso</label><br>
+                        <input type="number" id="fpiso" name="fpiso"><br><br>
+
+                        <!-- Puerta -->
+                        <label for="fname">Puerta</label><br>
+                        <input type="number" id="fpuerta" name="fpuerta"><br><br>
+
+                        <!-- Escalera -->
+                        <label for="fname">Escalera</label><br>
+                        <input type="text" id="fescalera" name="fescalera"><br><br>
+
+                        <!-- C.Postal -->
+                        <label for="fname">Codigo postal</label><br>
+                        <input type="number" id="fpostal" name="fpostal" required><br><br>
+
+                        <!-- Población -->
+                        <label for="fname">Población</label><br>
+                        <input type="text" id="fpoblacion" name="fpoblacion"><br><br><br>
+
+                        <!-- Boton Enviar -->
+                        <input type="submit" value="Enviar">
+                      </form> 
+
+
+                <br>
+                <br>
+                <div class="mapouter">
+                        <div class="gmap_canvas"><iframe width="500" height="400" id="gmap_canvas"
+                                        src="https://maps.google.com/maps?q=UOC&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                                        href="https://fmovies-online.net">fmovies</a><br>
+                                <style>
+                                        .mapouter {
+                                                position: relative;
+                                                text-align: right;
+                                                height: 400px;
+                                                width: 500px;
+                                        }
+                                </style><a href="https://www.embedgooglemap.net">insert google map into wordpress</a>
+                                <style>
+                                        .gmap_canvas {
+                                                overflow: hidden;
+                                                background: none !important;
+                                                height: 400px;
+                                                width: 500px;
+                                        }
+                                </style>
+                        </div>
+                </div>
+                <br>
+                <br>
+
+                <a href="index.html">Volver a la página principal</a>
+        </body>
+</center>
+
+</html>

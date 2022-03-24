@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10</title>
+</head>
+
+<style>
+    body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .redDot {
+        color: red;
+    }
+
+    div {
+        display: inline-block;
+        padding-right: 80px;
+    }
+</style>
+
+<body>
+
+
+    <form action="/action_page.php">
+        <div>
+            <div>
+                <!-- TITULO 1 -->
+                <strong>Nombre y Apellidos <span class="redDot">*</span></strong> <br><br>
+
+                <!-- Nombre -->
+
+                <input type="text" id="fname" name="fname" required><br>
+                <label for="fname">Nombre</label><br><br>
+
+                <!-- Apellido -->
+
+                <input type="text" id="lname" name="lname" size="40" required><br>
+                <label for="lname">Primer Apellido</label><br><br>
+
+                <!-- 2nd Apellido -->
+
+                <input type="text" id="l2name" name="l2name" size="40"><br>
+                <label for="lname">Segundo Apellido</label><br><br><br>
+
+                <!-- Email -->
+                <strong>Email</strong> <br><br>
+                <input type="text" id="lname" name="lname" required><br>
+            </div>
+
+            
+
+            <div><br><br>
+                <!-- TITULO 2 -->
+                <strong>Dirección <span class="redDot">*</span></strong> <br><br>
+
+                <!-- Calle -->
+
+                <input type="text" id="fname" name="fname" size="40" required><br>
+                <label for="fname">Calle, número, piso, puerta</label><br><br>
+
+                <div>
+                    <!-- codigo postal -->
+
+                    <input type="text" id="lname" name="lname" size="10" required><br>
+                    <label for="lname">Codigo postal</label><br><br>
+
+                    <!-- Provincia -->
+
+                    <input type="text" id="l2name" name="l2name" size="10"><br>
+                    <label for="lname">Provincia</label><br><br><br>
+                </div>
+
+                <div>
+                    <!-- Municipio -->
+
+                    <input type="text" id="lname" name="lname" size="15" required><br>
+                    <label for="lname">Municipio</label><br><br>
+
+                    <!-- Pais -->
+
+                    <input type="text" id="l2name" name="l2name" size="15"><br>
+                    <label for="lname">Pais</label><br><br><br>
+                </div>
+                <br>
+
+                <div>
+                    <!-- Email -->
+                    <strong>Teléfono<span class="redDot">*</span></strong> <br><br>
+                    <input type="text" id="lname" name="lname" required><br>
+                    <label for="lname">Fijo</label>
+                </div>
+
+                <div>
+                    <!-- Email -->
+
+                    <input type="text" id="lname" name="lname" required><br>
+                    <label for="lname">Móvil</label>
+                </div>
+
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

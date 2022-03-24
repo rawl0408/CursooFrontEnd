@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBJETOS
+        
+    </title>
+</head>
+
+<body>
+    
+    <script src="./js/data.js"></script>
+    <script src="./js/index.js"></script>
+    
+
+    <script>
+    
+        console.log("Añadimos productos al cartList con BUY()"); 
+
+        buy(1);
+        buy(6);
+        buy(1);
+        buy(1);
+        buy(2);
+        buy(3);
+        buy(6);
+        buy(8);
+        buy(1);
+        buy(10);
+
+        console.log("Enseñamos el carrito: ");
+        showCartList(cartList)
+
+        console.log("Este es el subtotal de productos: ");
+        subTotal()
+        console.table(subtotal);
+        
+
+        console.log("Limpiamos el carrito: ");
+        cleanCart(cartList);
+        console.log("*CARRITO LIMPIADO*");
+
+
+        console.log("Miramos si esta vacio el cart:");
+        console.log(cartList);
+
+        console.log("Enseñamos el carrito: ");
+        showCartList(cartList)
+
+
+        console.log("Limpiamos el carrito: ");
+        cleanCart(subtotal);
+        console.log("*CARRITO LIMPIADO*");
+
+        
+        console.log("Este es el subtotal de productos: ");
+        subTotal()
+        console.table(subtotal);
+
+
+
+    </script>
+
+</body>
+
+</html>
