@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>promesas</title>
+</head>
+
+<body>
+
+</body>
+
+<script>
+    const paises = [];
+    const nuevoPais = pais => new Promise(resolve => {
+        setTimeout(() => {
+            paises.push(pais);
+            resolve(`Pais gregado: ${pais}`)
+        }, 3000);
+    });
+
+    nuevoPais("Alemania").then(resultado => {
+        console.log(resultado);
+        console.log(paises);
+        return nuevoPais(" Francia")
+
+    }).then(resultado => {
+        console.log(resultado);
+        console.log(paises);
+        return nuevoPais(" Inglaterra")
+
+    }).then(resultado => {
+        console.log(resultado);
+        console.log(paises);
+        return nuevoPais(" Italia")
+
+    }).then(resultado => {
+        console.log(resultado);
+        console.log(paises);
+        return nuevoPai()
+
+    }).then(resultado => {
+        console.log(resultado);
+        console.log(paises);
+        return nuevoPais(" Spain")
+        
+    }).catch(error => {
+        console.log("Hay un error: " + error);
+    })
+
+
+
+
+
+</script>
+
+</html>
