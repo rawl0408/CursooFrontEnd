@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.3/vue.js"></script>
+    <title>primer Vue</title>
+</head>
+
+<body>
+    <div id="app">
+
+    </div>
+
+    <template id="plantilla">
+        <div>
+            <div> <b> {{ mensaje }} <br><br> </b> </div>
+
+            <a v-bind:href="href">
+                <div> <img v-bind:src="imagen"> </div>
+            </a>
+
+            <span v-html="mensajeHTML"> </span>
+
+            <span> {{ variable1 ? "YES" : "NO" }} <br></span>
+
+            <span> {{ number + 1 }} <br> </span>
+
+            <span> {{ mensaje.split("").reverse().join("") }} </span>
+
+            <!-- new plantilla -->
+            <div>
+                <h1 style="color: red"> {{title}} </h1>
+                <h2>Title: {{name}} </h2>
+                <h2>Topic: {{topic}} </h2>
+                <!-- llamar a funciones -->
+                <h2>Show: {{show()}} </h2>
+                <h2>Show: {{showName("Pepe")}} </h2>
+
+            </div>
+
+            <!-- boton sumar, restar y reset -->
+
+            <button v-on:click="number++"> Incrementar </button>
+            <button v-on:click="number--"> Decrementar </button>
+            <button v-on:click="reset()"> Resetear </button> <br>
+            Numero: {{number}}
+            <br>
+            <!-- si queremos que el saludame haga los 2 alerts que tenemos y que enseñe elñementos del DOM (vease target)
+            no hay que poner las () -->
+            <button v-on:click="saludame"> SALUDAME </button>
+
+            <div>
+                <label for="goal"> Goal </label>
+                <input type="text" id="goal" v-model="enteredValue" />
+                <button v-on:click="addGoal">Add Goal</button>
+            </div>
+
+        </div>
+    </template>
+
+
+    <script type="text/javascript" src="./js/app.js"></script>
+</body>
+
+</html>
