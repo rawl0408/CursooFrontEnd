@@ -4,19 +4,36 @@
 <head>
   <meta charset="utf-8" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.3/vue.js"></script>
-  <title>1e component VUE</title>
+  <title>1er component VUE</title>
 </head>
 
 <body>
+
   <div id="app"></div>
 
   <template id="ejemplo">
-    <div>     
-        <b>{{ mensaje }}</b>
-        <img :src="imagen" />      
+
+    <div>
+
+      <div v-if="mostrar">
+
+        <p><b>{{ mensaje }}</b></p>
+
+        <img :src="imagen" /> <br>
+
+        <p v-for="element in cursos">
+          <a v-bind:href="element.url"> {{element.name}} </a>
+        </p>
+
+
+
+      </div>
+
       <button @click="toggleMostrar">Mostrar/Ocultar</button>
+
     </div>
-  </template>  
+
+  </template>
 
   <!--OJO això ha d'estar aquí al final -->
   <script src="js/javascript.js"></script>

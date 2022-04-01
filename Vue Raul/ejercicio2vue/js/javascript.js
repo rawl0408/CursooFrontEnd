@@ -22,7 +22,7 @@ const app = new Vue({
   },
   methods: {
     toggleMostrar: function() {
-      alert("mostrar " + this.mostrar);
+      //alert("mostrar " + this.mostrar);
       this.mostrar = !this.mostrar;
     },
   },
