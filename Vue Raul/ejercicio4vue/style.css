@@ -1,0 +1,33 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    
+}
+
+body {
+    background-color:rgb(116, 116, 116)
+}
+
+#fondoFrom {
+    background-color: rgb(247, 179, 179)
+}
+
+#fondoTo {
+    background-color: rgb(179, 247, 185)
+}
+
+#textoFrom {
+    color: rgb(247, 179, 179)
+}
+
+#textoTo{
+    color: rgb(179, 247, 185)
+}
+
+#cantidad {
+    width: 200px;
+}
+
+#cliente{
+    color: rgb(241, 241, 123)
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+
+    <div id="databinding">
+        
+        <h1> Bienvenido <span id="cliente">{{cliente}}</span> </h1>
+
+        <h2> {{ title }} </h2>
+
+        <input id="cantidad" type="number" v-model="amount" placeholder="Introduce una cantidad" > <br><br>
+
+        <span>Convertir desde </span>
+
+        <select v-model="convertfrom" id="fondoFrom">
+
+            <option v-for="a in currencyfrom" v-bind:value="a.name"> {{a.desc}} </option>
+
+        </select>
+
+        <span> a </span>
+
+        <select v-model="convertto" id="fondoTo">
+
+            <option v-for="a in currencyfrom" v-bind:value="a.name"> {{a.desc}} </option>
+
+        </select> <br> <br>
+
+        <b><span> {{amount}} <span id="textoFrom"> {{convertfrom}} </span> equals {{total}} <span id="textoTo"> {{convertto}} </span> </span></b>
+
+    </div>
+
+    <script src="/ejercicio4vue/app.js"></script>
+</body>
+
+</html>
