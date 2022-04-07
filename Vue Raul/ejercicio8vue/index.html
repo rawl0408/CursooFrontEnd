@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+    <title>Componentes</title>
+</head>
+
+<body>
+
+    <div id="my-app">
+
+        <h1>{{ name }}</h1>
+        <h2>Este boton está dentro de un objeto </h2>
+
+        <!-- Cridem directamente al Objecte de VUE -->
+
+        <button @click="onAdd">{{ count }} boto objecte VUE</button>
+        <h2>Estos botones están echos con COMPONENTES </h2>
+
+        <!-- Cridem a un component de VUE -->
+
+        <my-button></my-button> <br>
+
+        <my-button></my-button> <br>
+
+        <b> Props sin vbind </b>
+        <user-detail first="Rauul" second="Garciia"></user-detail> 
+
+        <b> Props con vbind </b>
+        <user-detail :first="firstname" v-bind:second="lastname"></user-detail> <br>
+
+
+    </div>
+
+    <script src="./component.js"></script>
+    <script src="./componentuser.js"></script>
+    <script src="./app.js"></script>
+
+</body>
+
+</html>

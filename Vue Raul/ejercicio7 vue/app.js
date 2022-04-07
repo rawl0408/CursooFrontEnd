@@ -8,9 +8,11 @@ var vm = new Vue({
     },
 
     filters: {
-        conversion: function () {
-            this.numero = this.resultado + "€"
-            return this.numero 
+        conversion: function (value) {
+            return value + " €" 
+        },
+        decimales: function (value){
+            return Math.round(value)
         }
     }
 })

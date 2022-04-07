@@ -11,10 +11,11 @@
 <body>
     <div id="ejercicioeuro">
 
+        Num: <input type="number" v-model="numero" placeholder="introduce 1 numero"> <br>
 
-        Num 1 <input type="number" v-model="numero" placeholder="introduce 1 numero"> 
-        Numero convertido a euros : {{ resultado }}
+        Numero convertido a euros : {{ numero | conversion }} <br>
 
+        Numero convertido a decimales : {{ numero | decimales }} <br>
 
     </div>
 
