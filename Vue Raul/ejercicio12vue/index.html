@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+
+    <title>Añadir y enseñar</title>
+</head>
+
+<body>
+
+    <div id="databinding">
+        <h1>Customer Details</h1>
+        <span>First Name</span>
+        <input type="text" placeholder="Enter First Name" v-model="fname" />
+        <span>Last Name</span>
+        <input type="text" placeholder="Enter Last Name" v-model="lname" />
+        <span>Address</span>
+        <input type="text" placeholder="Enter Address" v-model="addr" />
+        <button v-on:click="showdata">Add</button>
+        <br /> <br />
+
+        <customercomponent v-for="(item, index) in custdet" v-bind:itr="item" v-bind:index="index"
+            v-on:removeelement="eliminar($event, index)"> </customercomponent>
+
+    </div>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./componentes/customercomponent.js"></script>
+    <script src="./app.js"></script>
+
+</body>
+
+</html>
